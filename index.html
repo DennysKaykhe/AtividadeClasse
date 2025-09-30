@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="lista.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1 class="ListaDeTarefas">Lista de Tarefas</h1>
+    <input type="text" id="item" placeholder="Adicione uma tarefa">
+    <input type="text" id="data" placeholder="Adicione uma data para tarefa">
+    <button onclick="adicionarItem()">Adicionar</button>
+    
+    <div class="tabelaTotal">
+    <table border="1" id="minhaTabela" class="tabela">
+        <thead>
+            <tr class="titulos">
+                <th>TAREFA</th>
+                <th>DATA</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script>
+
+function adicionarItem() {
+
+    const tarefaInput = document.querySelector("#item");
+    const dataInput = document.querySelector("#data");
+
+    const tarefa = tarefaInput.value;
+    const data = dataInput.value;
+
+        const tabelaBody = document.querySelector("#minhaTabela tbody");
+
+        const tr = document.createElement("tr");
+
+        const tdTarefa = document.createElement("td");
+        tdTarefa.textContent = tarefa;
+
+        const tdData = document.createElement("td");
+        tdData.textContent = data;
+
+        tr.appendChild(tdTarefa);
+        tr.appendChild(tdData);
+
+        tabelaBody.appendChild(tr);
+}
+</script>
+
+</body>
+</html>

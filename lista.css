@@ -1,0 +1,24 @@
+.tabela{
+    height: 500px;
+}
+
+.titulos{
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ListaDeTarefas{
+    text-align: center;
+}
+
+.tabelaTotal {
+  width: fit-content;       /* Ou defina uma largura fixa como 80%, 600px, etc. */
+  margin: 0 auto;           /* Centraliza horizontalmente */
+  padding: 200px;
+}
+
+table {
+  border-collapse: collapse; /* Para deixar a borda mais limpa */
+  width: 100%;
+}
