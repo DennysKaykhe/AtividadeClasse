@@ -22,3 +22,8 @@ table {
   border-collapse: collapse; /* Para deixar a borda mais limpa */
   width: 100%;
 }
+
+body{
+    text-align: center;
+    background-color: wheat;
+}
